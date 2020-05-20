@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<ul>
+  {% for page in pages %}
+    <li><a href="/wiki/{{page.route}}">{{page.title}}</a></li>
+  {% endfor %}
+</ul>
+
+<!-- <div class="col-md-9">
+
+  {% for tweet in tweets %}
+  <div id="nombres"><a href="/users/{{tweet.name}}">{{tweet.name}}</a></div>
+  <div id="contenidoTweet">
+      <a href="/tweets/{{tweet.id}}">{{tweet.content}}</a></div>
+  {% endfor %}
+</div> -->
+
+
+
+  <hr>
+  <ul class="list-unstyled">
+    <!-- PLACEHOLDER LIST OF PAGES -->
+  </ul>
+{% endblock %}
